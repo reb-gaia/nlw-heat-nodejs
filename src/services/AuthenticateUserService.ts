@@ -3,7 +3,7 @@ import axios from "axios";
 /**
  * Receber code (string)
  * Recuperar o access_token no github
- * Recuperar infos do user
+ * Recuperar infos do user no github
  * Verificar se o usuário existe no DB
  * ---- SIM = Gera um token
  * ---- NÃO = Cria no DB, gera um token
