@@ -52,7 +52,7 @@ class AuthenticateUserService {
       where: {
         github_id: id
       }
-    })
+    });
 
     if(!user) {
       user = await prismaClient.user.create({
@@ -62,7 +62,7 @@ class AuthenticateUserService {
           avatar_url,
           name,
         }
-      })
+      });
     }
 
     const token = sign(
