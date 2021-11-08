@@ -38,5 +38,3 @@ app.get("/signin/callback", (request, response) => {
 });
 
 export { serverHttp, io }
-
-// * TODO 1:45:38
